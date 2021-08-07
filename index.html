@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/title.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    
+    <title>Zing-Mp2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="zingMp2">
+            <!-- header -->
+            <div class="header-container">
+                <div class="hearder-main">
+                    <span class="header-icon-add">
+                        <i class="fas fa-plus"></i>
+                    </span>
+                    <div class="header">
+                        <h3>Now playing</h3>
+                        <h2>Faded</h2>
+                    </div>
+                    
+                    <label class="header-icon-volum" for="check">
+                        <i class="fas fa-volume-up "></i>
+                        <i class="fas fa-volume-mute"></i>
+                        <input type="checkbox" id="check">
+                        <span class="volum">
+                            <input type="range" value="80" step="1" min="0" max="100">
+                        </span>
+                    </label>
+                </div>
+                
+                <div class="avatar">
+                    <img src="./assets/img/faded-img.jpeg" alt="">
+                </div>
+                <div class="music-controll">
+                    <div class="repeat"><i class="fas fa-redo"></i></div>
+                    <div class="back-btn"><i class="fas fa-backward"></i></div>
+                    <div class="pause"><i class="fas fa-pause-circle play-pause-btn"></i></div>
+                    <div class="play"><i class="fas fa-play-circle play-pause-btn"></i></div>
+                    <div class="next-btn"><i class="fas fa-forward"></i></div>
+                    <div class="random"><i class="fas fa-random"></i></div>
+                </div>
+
+                <div class="progress">
+                    <input type="range" value="0" step="1" min="0" max="100">
+                </div>
+            </div>
+            <!-- Song-list -->
+            <div class="song-list">
+                
+                
+            </div>
+            <div class="see-more"  >
+                <div class="overlay"></div>
+                <div class="option">
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="option-header">
+                        <div onclick="clock()" class="clock">
+                            <i class="far fa-clock"></i>
+                            Hẹn giờ
+                        </div>
+                        <div onclick="share()" class="clock">
+                            <i class="fas fa-external-link-alt"></i>
+                            Share
+                        </div>
+                    </div>
+                    <ul class="option-option">
+                        <li onclick="optionItem1()" ><i class="far fa-heart"></i>Thêm vào yêu thích</li>
+                        <li onclick="optionItem2()" ><i class="far fa-bell"></i>Cài làm nhạc chuông</li>
+                        <li onclick="optionItem3()" ><i class="fas fa-download"></i>Tải về</li>
+                        <li onclick="optionItem4()" ><i class="fas fa-ban"></i>Chặn</li>
+                        <li onclick="optionItem5()" ><i class="far fa-flag"></i>Báo lỗi</li>
+                    </ul>
+            </div>
+            </div>
+            <audio id="audio" src="./assets/audio/Faded-Remix-Alan-Walker-RH-remix.mp3"></audio>
+        </div>
+        
+            
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
